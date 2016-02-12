@@ -1,0 +1,216 @@
+body {
+	/*background-color: #f9f9f9;*/
+}
+
+.wrapper {
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	width: 100%
+}
+.container {
+	width: 80%;
+	background: url(
+		          ../img/container.jpg
+		          );
+
+	margin: 0 auto;
+	padding: 46px;
+	box-shadow: 0px 
+	            5px 
+	            5px 
+	            0px 
+	            rgba(
+	            	00, 
+	            	00, 
+	            	00, 
+	            	0.3);
+}
+
+
+
+
+/*header*/
+.header{
+	margin-bottom: 40px;
+}
+.head_nav{
+	background: linear-gradient(
+		          to top, 
+		          #444343, 
+		          #5e5e5e);
+	
+	/*POSITION*/
+	overflow: auto;
+
+	height: 31px;
+	padding-left: 2px;
+	margin-top: 40px;
+}
+.nav_elem {
+	font-family: "Open Sans", 
+	             Arial, 
+	             sans-serif;
+	text-shadow: 1px 
+	             1px 
+	             1px 
+	             rgba(
+	              00, 
+	              00, 
+	              00, 
+	              0.5);
+	font-size: 14.67px;
+	color: #fff;
+	text-decoration: none;
+	
+	/*POSITION*/
+	float: left; /*makes ".head_nav" disappear without "overflow:auto"*/
+	
+	margin-right: 40px;
+	padding: 8px 23px;
+}
+.nav_elem:hover {
+	background: #fff url(
+	            ../img/head_hover.png)
+	            no-repeat 
+	            100% 
+	            100%/
+	            100% 
+	            100%;
+}
+
+
+/*sidebar-content-container*/
+.sidebar_content_container{
+ 
+}
+			/*sidebar*/
+			.sidebar {
+				margin-right: 40px;
+				width: 240px;
+				display: inline-block;
+			}
+			.left_nav_box {
+				border: 1px 
+				        solid 
+				        #c8c8c8;
+				
+			}
+			.left_nav_item {
+				border-bottom: 1px 
+				               solid 
+				               #c8c8c8;
+				padding-top: 18px;
+				padding-bottom: 13px;
+			}
+			.left_nav_item:last-child {
+				border: none;
+
+			}
+			.left_nav_item:hover {
+				background: #f9f9f9;
+				color: #2c2c2c;
+				padding-left: 12px;
+
+			}
+			.left_nav_elem {
+				font-family: "Open Sans", 
+				             Arial, 
+				             sans-serif;
+				font-size: 13.33px;
+				color: #656363;
+				text-decoration: none;
+				
+
+				padding-left: 23px;
+				
+			}
+
+
+			/*content*/
+			.content {
+				float: right;
+				width: 65%;
+			}
+			.content_img {
+				width: 100%;
+			}
+			.content_text {
+				font-family: "Open Sans", 
+				             Arial, 
+				             sans-serif;
+				font-size: 13.33px;
+				color: #2c2c2c;
+				width: auto;
+
+				margin: 40px 20px 40px 0;
+				padding-left: 20px;
+				
+			}
+
+
+
+/*footer*/
+
+.footer {
+	background: url(
+		          ../img/bg_footer_panel.jpg
+		          );
+	/*POSITION*/
+	clear: both;
+	overflow: auto;
+}
+
+.foot_nav{	
+	display: inline;
+}
+
+.foot_nav_list {
+	/*height: 30px;*/
+	padding-left: 2px;
+}
+
+.foot_nav_elem {
+	font-family: "Open Sans", 
+	             Arial, 
+	             sans-serif;
+	font-size: 13.33px;
+	color: #2c2c2c;
+	text-shadow: 1px 
+	             1px 
+	             1px 
+	             rgba(
+	              00, 
+	              00, 
+	              00, 
+	              0.5);
+	text-decoration: none;
+	/*POSITION*/
+	float: left;
+	margin-right: 40px;
+	padding: 8px 23px;
+}
+
+.copy_elem {
+	font-family: "Open Sans", 
+	             Arial, 
+	             sans-serif;
+	font-size: 13.33px;
+	color: #2c2c2c;
+	
+	/*POSITION*/
+	float: right;
+
+	padding-top: 7px;
+	padding-right: 26px;
+}
+.copy_elem:after {
+	content: "2014 \00a9  All rights reserved";
+}
+
+
+.foot_nav_elem:hover {
+	text-decoration: underline;
+}
+
+/* Convert Photoshop Drop Shadows to CSS3 Box & Text Shadows
+ "http://www.melanieceraso.com/psd-to-css3/"*/
