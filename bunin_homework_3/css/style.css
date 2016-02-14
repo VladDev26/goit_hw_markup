@@ -7,14 +7,14 @@ body {
 		          ../img/container.jpg
 		          );
 	padding: 46px;
-	box-shadow: 0px 
-	            5px 
-	            5px 
-	            0px 
+	box-shadow: 0px
+	            5px
+	            5px
+	            0px
 	            rgba(
-	            	00, 
-	            	00, 
-	            	00, 
+	            	00,
+	            	00,
+	            	00,
 	            	0.3);
 	margin: 0 auto;
 	width: 80%;
@@ -29,10 +29,10 @@ header {
 }
 header ul{
 	background: linear-gradient(
-		          to top, 
-		          #444343, 
+		          to top,
+		          #444343,
 		          #5e5e5e);
-	
+
 	/*POSITION*/
 	overflow: auto;
 
@@ -40,21 +40,21 @@ header ul{
 	margin-top: 40px;
 }
 header ul a {
-	font-family: "Open Sans", 
-	             Arial, 
+	font-family: "Open Sans",
+	             Arial,
 	             sans-serif;
-	text-shadow: 1px 
-	             1px 
-	             1px 
+	text-shadow: 1px
+	             1px
+	             1px
 	             rgba(
-	              00, 
-	              00, 
-	              00, 
+	              00,
+	              00,
+	              00,
 	              0.5);
 	font-size: 14.67px;
 	color: #fff;
 	text-decoration: none;
-	
+
 	/*POSITION*/
 	float: left; /*makes ".head_nav" disappear without "overflow:auto"*/
 	margin: 0 20px 0 2px;
@@ -63,24 +63,12 @@ header ul a {
 header ul a:hover {
 	background: #fff url(
 	            ../img/head_hover.png)
-	            no-repeat 
-	            100% 
+	            no-repeat
+	            100%
 	            100%/
-	            100% 
+	            100%
 	            100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*article*/
@@ -88,19 +76,21 @@ header ul a:hover {
 .article {
 	max-width: 100%;
 	min-width: 1%;
+	position: relative;
+	overflow: hidden;
 }
 			.sidebar {
 				width: 30%;
 				display: inline-block;
 			}
 			.sidebar ul {
-				border: 1px 
-				        solid 
+				border: 1px
+				        solid
 				        #c8c8c8;
 			}
 			.sidebar ul li {
-				border-bottom: 1px 
-				               solid 
+				border-bottom: 1px
+				               solid
 				               #c8c8c8;
 			}
 			.sidebar ul li:last-child {
@@ -114,15 +104,15 @@ header ul a:hover {
 
 			}
 			.sidebar ul li a {
-				font-family: "Open Sans", 
-				             Arial, 
+				font-family: "Open Sans",
+				             Arial,
 				             sans-serif;
 				font-size: 13.33px;
 				color: #656363;
 				text-decoration: none;
 
 				display: block;
-				padding: 15px 0 15px 23px;			
+				padding: 15px 0 15px 23px;
 			}
 
 
@@ -142,8 +132,8 @@ header ul a:hover {
 				height: 397px;*/
 			}
 			.content_text {
-				font-family: "Open Sans", 
-				             Arial, 
+				font-family: "Open Sans",
+				             Arial,
 				             sans-serif;
 				font-size: 13.33px;
 				color: #2c2c2c;
@@ -151,7 +141,7 @@ header ul a:hover {
 
 				margin: 40px 20px 40px 0;
 				padding-left: 20px;
-				
+
 			}
 
 
@@ -163,6 +153,8 @@ footer {
 		          ../img/bg_footer_panel.jpg
 		          );
 	clear: both;
+	position: relative;
+	overflow: hidden;
 }
 
 footer ul {
@@ -175,18 +167,18 @@ footer ul li {
 
 footer ul a {
 	display: inline-block;
-	font-family: "Open Sans", 
-	             Arial, 
+	font-family: "Open Sans",
+	             Arial,
 	             sans-serif;
 	font-size: 13.33px;
 	color: #2c2c2c;
-	text-shadow: 1px 
-	             1px 
-	             1px 
+	text-shadow: 1px
+	             1px
+	             1px
 	             rgba(
-	              00, 
-	              00, 
-	              00, 
+	              00,
+	              00,
+	              00,
 	              0.5);
 	text-decoration: none;
 	padding: 13px 23px;
@@ -194,8 +186,8 @@ footer ul a {
 }
 
 .copy_elem {
-	font-family: "Open Sans", 
-	             Arial, 
+	font-family: "Open Sans",
+	             Arial,
 	             sans-serif;
 	font-size: 13.33px;
 	color: #2c2c2c;
