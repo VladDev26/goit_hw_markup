@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaneue-thin-webfont.eot');
+  src: url('helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+        url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+        url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+body{
+  background: #bfbfbf;
+}
+.wrapper{
+  margin: 0 auto;
+  /*height: 80%;*/
+  width: 100%;
+  background: linear-gradient(to top, #ebebeb, #fafafa);
+}
+
+/*HEADER*/
+.header{
+  background: #074f8f;
+  /*display: block;*/
+}
+.nav{
+  text-align: right;
+  /*display: inline-block;*/
+  /*overflow: auto;*/
+}
+.nav li{
+  display: inline-block;
+  /*float: right;*/
+  color: #fff;
+  padding: 10px 0px;
+  margin: 0px 0px;
+}
+.nav a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #60b5ed;
+  padding: 10px 5px;
+}
+.nav a:hover{
+  color: #fff;
+}
+.nav ul:last-child{
+  margin-right: 10px;
+}
+#inventicon{
+  background: #074f8f url(../img/inventicon.png) no-repeat 0px 0px;
+  padding: 0 10px 0 25px;
+}
+.rightborder{
+  margin-right: 10px;
+  border-right: 1px solid #56a2dc;
+}
+
+/*ARTICLE*/
+.article{
+  background: #000 url(../img/bg_photo.jpg) repeat;
+  padding: 15% 8%;
+}
+.form{
+  margin: 2px auto 0;
+  /*background: rgba(90, 90, 90, 0.63);*/
+  width: 50%;
+}
+.formhead{
+  background: linear-gradient(to top, rgba(87,87,87,0.63), rgba(91,91,91,1));
+  width: 100%;
+}
+.formhead p{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+/*FORMBODY*/
+.formbody{
+  margin: 1px 0 0 0;
+  background: linear-gradient(to top, rgba(87,87,87,0.63), rgba(91,91,91,1));
+}
+.facebook{
+  text-align: center;
+  border: 20px solid transparent;
+}
+.facebook a{
+  color: #fff;
+  background: linear-gradient(to top, #2d4176, #3e5694);
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.face_a1{
+  border-right: 2px solid #4d66a6;
+  border-top: 1px solid #758ab9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 14px;
+}
+.face_a2{
+  border-left: 2px solid #1d3c73;
+  border-top: 1px solid #758ab9;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -5px;
+  font-size: 14px;
+}
+/*.face_a1:hover,
+.face_a2:hover {
+  background: #758ab9;
+}*/
+.facebook span{
+  font-weight: bold;
+}
+.OU_lines{
+  text-align: center;
+}
+.OU_lines p{
+  display: inline-block;
+  color: #999;
+  font-size: 14px;
+}
+hr{
+  display: inline-block;
+  width: 26%;
+  background: #666;
+  height: 2px;
+  border: none;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,1);
+}
+
+.fields{
+  margin: 10px auto;
+  display: block;
+  background: linear-gradient(to top, #111111, #0e0d0d);
+  border: none;
+  border-bottom: 1px solid #484948;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 55%;
+  padding: 10px;
+}
+.fields:focus{
+  background: #1b5288;
+  box-shadow: 0px 0px 9px 0px rgba(47,123,197,0.77);
+}
+.send_me{
+  text-align: center;
+  margin: 10px 0;
+}
+#send{
+  display: inline;
+  margin: 0;
+}
+label {
+  color: #cccccc;
+  font-weight: bold;
+}
+[type="submit"] {
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(to top, rgba(66,153,210,0.8), rgba(101,168,228,1));
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.formfoot{
+  padding: 10px 0;
+  background: rgba(90, 90, 90, 0.63);
+}
+.formfoot p{
+  font-size: 10px;
+  color: #cccccc;
+  text-align: center;
+  font-weight: bold;
+}
