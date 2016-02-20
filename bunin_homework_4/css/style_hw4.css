@@ -1,13 +1,13 @@
 body {
-  background: #0d7ea5 url(
-              ../img/background.jpg
-              ) repeat-x 0px 0px;
+  background: #0c739f url(../img/background.jpg) repeat-x 0px 0px;
   width: 100%;
 }
 .wrapper {
   background-color: #fff;
   width: 999px;
-  margin: 0 auto 0;
+  /*min-width:700px;
+  max-width: 999px;*/
+  margin: 0 auto;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
@@ -59,13 +59,15 @@ body {
 }
 /*countries*/
 .countries {
-  width: 85%;
+  /*width: 90%;*/
+  width: 435px;
   float: right;
   clear: both;
 }
 .countries li {
-  float: left;
+  /*float: left;*/
   margin: 0 10px;
+  display: inline-block;
 }
 .countries a {
   /*background: #fff url(../img/flags_sprite.png) no-repeat;*/
@@ -103,7 +105,7 @@ body {
 
 /*PHOTO*/
 .photo {
-  background: #fff url(../img/photo.png) no-repeat center -590px;
+  background: #fff url(../img/photo.jpg) no-repeat;
   width: 100%;
   height: 200px;
 }
@@ -140,7 +142,11 @@ body {
   /*text-align: center;*/
   top: 443px;
   /*cursor: pointer;*/
-  background: #000 url(../img/dropdown_layer.png) no-repeat 0px 0px;
+  background: #000 url(../img/dropdown_layer.png) 0px 0px;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  display: none;
+  margin: 0 11px;
+  padding: 5px 0px;
 }
 .dropdown li {
   width: 100%;
@@ -149,23 +155,17 @@ body {
   padding: 0;
   margin: 2px 0;
 }
-.services a {
-  padding: 0px 0px 0px 0px;
-}
 .journey {
-  height: 125px;
-  width: 150px;
-  display: none;
+  /*height: 125px;*/
+  width: 130px;
 }
 .services {
-  height: 125px;
-  width: 111px;
-  display: none;
+  /*height: 125px;*/
+  width: 88px;
 }
 .partners {
-  height: 125px;
-  width: 138px;
-  display: none;
+  /*height: 125px;*/
+  width: 116px;
 }
 .nav li+li:hover .journey {
   display: block;
@@ -187,7 +187,7 @@ body {
 	border-top: 5px solid #fff;
   position: relative;
   top: 11px;
-  left: 3px;
+  left: 5px;
 }
 
 /*ARTICLE*/
@@ -296,3 +296,7 @@ body {
   content: "";
   clear: both;
 }
+        /*NOTES*/
+/*added box-shadow to dropdown +*/
+/*fixed countries nav width*/
+/*fixed background color +*/
