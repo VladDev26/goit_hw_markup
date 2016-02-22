@@ -21,8 +21,6 @@ body {
 }
 
 
-
-
 /*header*/
 header {
 	margin-bottom: 40px;
@@ -32,10 +30,8 @@ header ul{
 		          to top,
 		          #444343,
 		          #5e5e5e);
-
 	/*POSITION*/
 	overflow: auto;
-
 	height: 39px;
 	margin-top: 40px;
 }
@@ -54,7 +50,6 @@ header ul a {
 	font-size: 14.67px;
 	color: #fff;
 	text-decoration: none;
-
 	/*POSITION*/
 	float: left; /*makes ".head_nav" disappear without "overflow:auto"*/
 	margin: 0 20px 0 2px;
@@ -71,53 +66,50 @@ header ul a:hover {
 }
 
 
-/*article*/
-			/*sidebar*/
-.article {
+/*SECTION*/
+			/*ASIDE*/
+section {
 	max-width: 100%;
 	min-width: 1%;
 	position: relative;
 	overflow: hidden;
 }
-			.sidebar {
+			aside {
 				width: 30%;
 				display: inline-block;
 			}
-			.sidebar ul {
+			aside ul {
 				border: 1px
 				        solid
 				        #c8c8c8;
 			}
-			.sidebar ul li {
+			aside ul li {
 				border-bottom: 1px
 				               solid
 				               #c8c8c8;
 			}
-			.sidebar ul li:last-child {
+			aside ul li:last-child {
 				border: none;
-
 			}
-			.sidebar ul li:hover {
+			aside ul li:hover {
 				background: #f9f9f9;
 				color: #2c2c2c;
 				padding-left: 12px;
-
 			}
-			.sidebar ul li a {
+			aside ul a {
 				font-family: "Open Sans",
 				             Arial,
 				             sans-serif;
 				font-size: 13.33px;
 				color: #656363;
 				text-decoration: none;
-
 				display: block;
 				padding: 15px 0 15px 23px;
 			}
 
 
-			/*content*/
-			.content {
+			/*ARTICLE*/
+			article {
 				float: right;
 				max-width: 65%;
 				min-width: 1%;
@@ -138,12 +130,9 @@ header ul a:hover {
 				font-size: 13.33px;
 				color: #2c2c2c;
 				width: auto;
-
 				margin: 40px 20px 40px 0;
 				padding-left: 20px;
-
 			}
-
 
 
 /*footer*/
@@ -195,10 +184,8 @@ footer ul a {
 	padding: 13px 26px;
 }
 
-
 footer ul a:hover {
 	text-decoration: underline;
 }
 
-/* Convert Photoshop Drop Shadows to CSS3 Box & Text Shadows
- "http://www.melanieceraso.com/psd-to-css3/"*/
+/* Convert Photoshop Drop Shadows to CSS3 Box & Text Shadows "http://www.melanieceraso.com/psd-to-css3/"*/

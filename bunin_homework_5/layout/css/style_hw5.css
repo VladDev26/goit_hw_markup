@@ -175,6 +175,7 @@ label {
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 .formfoot{
   padding: 10px 0;
