@@ -13,7 +13,7 @@ body {
 
 /*HEADER*/
 .header {
-  width: 100%;
+  width: 999px;
   /*background-size: cover;*/
   height: 176px;
   overflow: hidden;
@@ -43,7 +43,7 @@ body {
 }
 .container {
   float: right;
-  width: 50%;
+  width: 495px;
   height: 176px;
 }
 .contacts {
@@ -59,48 +59,59 @@ body {
 }
 /*countries*/
 .countries {
-  /*width: 90%;*/
-  width: 435px;
+  width: 378px;
   float: right;
   clear: both;
 }
 .countries li {
-  /*float: left;*/
-  margin: 0 10px;
+  margin: 0 4px;
   display: inline-block;
 }
 .countries a {
   /*background: #fff url(../img/flags_sprite.png) no-repeat;*/
   display: block;
   color: #128aa7;
-  width: 48px;
-  height: 54px;
+  /*width: 58px;*/
+  height: 58px;
   font-family: Tahoma, sans-serif;
   font-size: 10px;
   text-align: center;
-  padding-top: 46px;
+  /*padding-top: 46px;*/
   margin-top: 25px;
 }
 .countries a:hover {
   text-decoration: none;
 }
+.countries a:before{
+  content: "";
+  height: 42px;
+  width: 42px;
+  display: block;
+  margin: 0 auto 2px;
+}
 .india {
-  background: #fff url(../img/flags_sprite.png) no-repeat 3px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat 0px 0px;
+  width: 43px;
 }
 .nepal {
-  background: #fff url(../img/flags_sprite.png) no-repeat -56px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat -58px 0px;
+  width: 43px;
 }
 .tibet {
-  background: #fff url(../img/flags_sprite.png) no-repeat -111px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat -114px 0px;
+  width: 43px;
 }
 .butan {
-  background: #fff url(../img/flags_sprite.png) no-repeat -167px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat -169px 0px;
+  width: 43px;
 }
 .shri {
-  background: #fff url(../img/flags_sprite.png) no-repeat -221px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat -218px 0px;
+  width: 58px;
 }
 .maldives{
-  background: #fff url(../img/flags_sprite.png) no-repeat -281px 0px;
+  background: #fff url(../img/flags_sprite.png) no-repeat -277px 0px;
+  width: 54px;
 }
 
 /*PHOTO*/
@@ -139,9 +150,7 @@ body {
 .dropdown {
   position: absolute;
   z-index: 1;
-  /*text-align: center;*/
   top: 443px;
-  /*cursor: pointer;*/
   background: #000 url(../img/dropdown_layer.png) 0px 0px;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   display: none;
@@ -229,14 +238,7 @@ body {
   height: 100%;
 }
         .col1 div {
-          border-bottom: 1px solid #c7cacf;
-          padding: 0 15px;
-        }
-        .col1 div+div {
-          border-bottom: 1px solid #c7cacf;
-          padding: 0 15px;
-        }
-        .col1 div+div+div {
+          /*border-bottom: 1px solid #c7cacf;*/
           padding: 0 15px;
         }
 .col2 {
@@ -250,16 +252,10 @@ body {
   width: 22%;
   position: relative;
   left: 134%;
+  padding-bottom: 5px;
 }
         .col3 div {
-          border-bottom: 1px solid #c7cacf;
-          padding: 0 15px;
-        }
-        .col3 div+div {
-          border-bottom: 1px solid #c7cacf;
-          padding: 0 15px;
-        }
-        .col3 div+div+div {
+          /*border-bottom: 1px solid #c7cacf;*/
           padding: 0 15px;
         }
 .cont1 p {
@@ -267,6 +263,7 @@ body {
   font-family: Tahoma, sans-serif;
   color: #424c43;
   margin: 10px 0;
+  text-align: center;
 }
 .cont1 h2 {
   font-size: 18px;
@@ -296,7 +293,3 @@ body {
   content: "";
   clear: both;
 }
-        /*NOTES*/
-/*added box-shadow to dropdown +*/
-/*fixed countries nav width*/
-/*fixed background color +*/
