@@ -95,7 +95,7 @@ header{
   font-size: 11px;
   cursor: pointer;
 }
-.forgot_button{
+.forgot_pass{
   color: #bfbfbf;
   font-family: "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 12px;
@@ -584,63 +584,78 @@ input[type="checkbox"] {
 .brandsbar{
   margin: 0 auto;
   width: 676px;
-  background: #fff url(../img/brands_sprite.png) no-repeat 0px 9px;
   position: relative;
   top: 58px;
   left: 0px;
 }
 .brandsbar a{
+  background: #fff url(../img/brands_sprite2.png) no-repeat;
   display: inline-block;
-  height: 41px;
+  height: 27px;
 }
-.toyo{
+
+.brandsbar .toyo{
+  background-position: 0px 0px;
   width: 82px;
-  position: relative;
-  top: 0px;
-  left: 0px;
 }
-.bridgestone{
+.brandsbar .bridgestone{
+  background-position: -96px 0px;
   width: 96px;
-  position: relative;
-  top: 0px;
-  left: 10px;
 }
-.continental{
+.brandsbar .continental{
+  background-position: -205px 0px;
   width: 78px;
-  position: relative;
-  top: 0px;
-  left: 19px;
 }
-.gooper{
-  width: 58px;
-  position: relative;
-  top: 0px;
-  left: 30px;
-}
-.avon{
-  width: 72px;
-  position: relative;
-  top: 0px;
-  left: 41px;
-}
-.factory{
-  width: 56px;
-  position: relative;
-  top: 0px;
-  left: 53px;
-}
-.pirelli{
+.brandsbar .gooper{
+  background-position: -296px 0px;
   width: 61px;
-  position: relative;
-  top: 0px;
-  left: 63px;
 }
-.dunlop{
-  width: 72px;
-  position: relative;
-  top: 0px;
-  left: 73px;
+.brandsbar .avon{
+  background-position: -368px 0px;
+  width: 76px;
 }
+.brandsbar .factory{
+  background-position: -458px 0px;
+  width: 58px;
+}
+.brandsbar .pirelli{
+  background-position: -527px 0px;
+  width: 63px;
+}
+.brandsbar .dunlop{
+  background-position: -603px 0px;
+  width: 73px;
+}
+
+.brandsbar .toyo:hover{
+  background-position: 0px -30px;
+}
+.brandsbar .bridgestone:hover{
+  background-position: -96px -30px;
+}
+.brandsbar .continental:hover{
+  background-position: -205px -30px;
+}
+.brandsbar .gooper:hover{
+  background-position: -296px -30px;
+}
+.brandsbar .avon:hover{
+  background-position: -368px -30px;
+}
+.brandsbar .factory:hover{
+  background-position: -458px -30px;
+}
+.brandsbar .pirelli:hover{
+  background-position: -527px -30px;
+}
+.brandsbar .dunlop:hover{
+  background-position: -603px -30px;
+}
+
+
+
+
+
 
 /*FOOTER*/
 footer{
