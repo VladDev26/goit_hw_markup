@@ -1,82 +1,10 @@
-@font-face {
-  font-family: 'League Gothic';
-  src: url('../fonts/lg/leaguegothic-regular-webfont.eot');
-  src: url('../fonts/lg/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-     url('../fonts/lg/leaguegothic-regular-webfont.woff2') format('woff2'),
-     url('../fonts/lg/leaguegothic-regular-webfont.woff') format('woff'),
-     url('../fonts/lg/leaguegothic-regular-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-    font-family: 'League Ghotic Condensed';
-    src: url('../fonts/lg/leaguegothic-condensedregular-webfont.eot');
-    src: url('../fonts/lg/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lg/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
-         url('../fonts/lg/leaguegothic-condensedregular-webfont.woff') format('woff'),
-         url('../fonts/lg/leaguegothic-condensedregular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sansbold';
-    src: url('../fonts/os/opensans-bold-webfont.eot');
-    src: url('../fonts/os/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/os/opensans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/os/opensans-bold-webfont.woff') format('woff'),
-         url('../fonts/os/opensans-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sansextrabold';
-    src: url('../fonts/os/opensans-extrabold-webfont.eot');
-    src: url('../fonts/os/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/os/opensans-extrabold-webfont.woff2') format('woff2'),
-         url('../fonts/os/opensans-extrabold-webfont.woff') format('woff'),
-         url('../fonts/os/opensans-extrabold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans Light';
-    src: url('../fonts/os/opensans-light-webfont.eot');
-    src: url('../fonts/os/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/os/opensans-light-webfont.woff2') format('woff2'),
-         url('../fonts/os/opensans-light-webfont.woff') format('woff'),
-         url('../fonts/os/opensans-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/os/opensans-regular-webfont.eot');
-    src: url('../fonts/os/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/os/opensans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/os/opensans-regular-webfont.woff') format('woff'),
-         url('../fonts/os/opensans-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'open_sanssemibold';
-    src: url('../fonts/os/opensans-semibold-webfont.eot');
-    src: url('../fonts/os/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/os/opensans-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/os/opensans-semibold-webfont.woff') format('woff'),
-         url('../fonts/os/opensans-semibold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 @media (max-width: 768px){
   *{
     transition: all .4s;
   }
-  .wrapper{
-    width: 100%;
+  body .wrapper{
+    min-width: 768px;
+    max-width: 960px;
   }
   .wrapper a{
     transition: none;
@@ -101,15 +29,13 @@
   }
   .wrapper .slider_arrows{
     width: 774px;
-    top: 424px;
-    left: 814px;
+    margin: -113px 0px 0px -3px;
   }
   .wrapper .slider_buttons{
     margin: 26px 0 0 0;
   }
   .wrapper .slider__box{
-    top: 222px;
-    left: 1264px;
+    margin: -314px 0px 0px 447px;
   }
   .wrapper .slider__item1{
     width: 370px;
@@ -186,11 +112,6 @@
   }
   .wrapper .testimonials span{
     display: block;
-  }
-  .wrapper .testimonials h3:before{
-    content: '';
-    top: 1259px;
-    left: 835px;
   }
   .wrapper .blog{
     width: 340px;
@@ -277,14 +198,9 @@
   }
 }
 @media (max-width: 480px){
-  *{
-    transition: all .4s;
-  }
-  .wrapper a{
-    transition: none;
-  }
-  .wrapper{
-    width: 100%;
+  body .wrapper{
+    min-width: 480px;
+    max-width: 768px;
   }
   .wrapper .wrapper_header{
     width: 480px;
@@ -298,16 +214,16 @@
   }
   .wrapper .wrapper_header nav{
     position: absolute;
-    top: 115px;
-    left: 1063px;
     width: 245px;
     height: 258px;
     border: .5px solid #000;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(0, 0, 0, .5);;
+    background: rgba(54, 41, 62, .8);
     z-index: 3;
+    margin: 12px 0px 0px 117px;
+
   }
   .wrapper .menu__item{
     display: block;
@@ -318,6 +234,12 @@
     display: block;
     text-align: center;
     padding: 5px 5px 6px 5px;
+  }
+  .wrapper .menu__elem:focus{
+    background: rgba(0, 0, 0, .5);
+  }
+  .wrapper .menu__elem:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
   }
   .wrapper .wrapper_slider{
     height: 245px;
@@ -332,9 +254,8 @@
     background-size: cover;
   }
   .wrapper .slider_arrows{
-    top: 306px;
-    left: 957px;
     width: 490px;
+    margin: -146px 0px 0px -3px;
   }
   .wrapper .slider_buttons{
     position: relative;
@@ -343,8 +264,8 @@
     margin: 0;
   }
   .wrapper .slider__box{
-    top: 195px;
-    left: 1217px;
+    margin: -258px 0px 0px 258px;
+    height: 200px;
     overflow: visible;
   }
   .wrapper .slider__item1{
@@ -369,6 +290,7 @@
   .wrapper .about{
     height: 598px;
     overflow: hidden;
+    width: 480px;
   }
   .wrapper .about:first-child{
     padding-top: 68px;
@@ -405,20 +327,22 @@
     width: 480px;
   }
   .wrapper .second_buttons{
-    margin: 45px 0px 0px 177px;
+    margin: 45px 0px 0px -10px;
   }
   .wrapper .testimonials{
     float: none;
+    margin: 0px 0px 0px 44px;
+    width: 416px;
   }
   .wrapper .testimonials h3{
     font-size: 30px;
+    margin: 26px 0px 0px 38px;
   }
   .wrapper .testimonials h3:before{
-    top: 1235px;
-    left: 979px;
+    margin: -6px 0px 0px -62px;
   }
   .wrapper .testimonials p{
-    margin: 10px 0px 0px 82px;
+    margin: 10px 0px 0px 38px;
     height: 166px;
     width: 341px;
   }
@@ -507,15 +431,156 @@
   }
 
 }
+@media (max-width: 320px){
+  body .wrapper{
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .wrapper .wrapper_header{
+    width: 320px;
+    margin: 59px auto 162px;
+  }
+  .wrapper .wrapper_header nav{
+    /*visibility: hidden;*/
+    display: none;
+  }
 
+  .wrapper .menu320p_item{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    /*text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);*/
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    padding: 5px 5px 2px 5px;
+    margin: 16px 0px 0px 137px;
+    border-bottom: 2px solid #edbfff;
+  }
+  .wrapper .logo{
+    margin-left: 84px;
+  }
+  .wrapper .wrapper_slider{
+    background: none;
+    margin: 0 0 68px 0;
+  }
+  .wrapper .slider__item1{
+    margin: 90px 0 0 65px;
+  }
+  .wrapper .slider_buttons{
+    top: 232px;
+    left: -229px;
+  }
+  .wrapper .slider{
+    width: 320px;
+  }
+  .wrapper .slider_iphone{
+    display: none;
+  }
+  .wrapper .slider_arrows{
+    width: 325px;
+    margin: -145px 0px 0px -1px;
+  }
+  .wrapper .about{
+    width: 320px;
+  }
+  .wrapper .about:first-child{
+    padding-top: 59px;
+  }
+  .wrapper .about_elem{
+    width: 320px;
+  }
+  .wrapper .about_elem p{
+    width: 194px;
+  }
+  .wrapper .about_elem a{
+    margin: 0px 0px 0px 234px;
+  }
+  .wrapper .second{
+    width: 320px;
+  }
+  .wrapper .testimonials{
+    margin: 0px 0px 0px 45px;
+    width: 256px;
+  }
+  .wrapper .testimonials h3{
+    font-size: 24px;
+    margin: 24px 0px 0px 34px;
+  }
+  .wrapper .testimonials h3:before{
+    margin: -4px 0px 0px -59px;
+  }
+  .wrapper .testimonials span{
+    display: block;
+    margin: -5px 0px 0px 2px;
+  }
+  .wrapper .testimonials p{
+    margin: 1px 0px 0px 38px;
+    hyphens: auto;
+    width: 184px;
+  }
+  .wrapper .second_buttons{
+    margin: 39px 0px 0px 18px;
+  }
+  .wrapper .blog{
+    margin: 39px 0px 0px 20px;
+    width: 321px;
+    overflow: hidden;
+  }
+  .wrapper .blog__elem h4{
+    overflow: hidden;
+    position: relative;
+    top: 4px;
+    width: 168px;
+    height: 24px;
+  }
+  .wrapper .blog__elem p{
+    width: 216px;
+  }
+  .wrapper .blog a{
+    margin: 12px 0px 0px 188px;
+  }
+  .wrapper .wrapper_logos{
+    height: 422px;
+  }
+  .wrapper .logos{
+    height: 420px;
+    width: 320px;
+  }
+  .wrapper .logos .logos_item1{
+    margin-left: 63px;
+    margin-top: 54px;
+  }
+  .wrapper .logos .logos_item3{
+    margin-left: 69px;
+    margin-top: 54px;
+  }
+  .wrapper .logos .logos_item4{
+    margin-left: 60px;
+  }
+  .wrapper .logos .logos_item5{
+    margin-left: 42px;
+    margin-top: 36px;
+  }
+  .wrapper .wrapper_footer1{
+    display: none;
+  }
+  .wrapper .wrapper_footer2 nav{
+    display: none;
+  }
+  .wrapper .footer2_design{
+    margin: 39px 251px 0px 28px;
+  }
+}
 
 
 .wrapper{
   /*width: 964px;*/
   /*width: 2400px;*/
 
-  width: 100%;
+  /*width: 100%;*/
+  /*min-width: 768px;*/
   min-width: 960px;
+  /*min-width: 1600px;*/
   max-width: 2400px;
 
   font-family: 'League Gothic', Tahoma, sans-serif;
@@ -551,7 +616,9 @@ header{
   background: url(../img/logo.png) no-repeat;
 }
 
-
+.menu320p_item{
+  display: none;
+}
   /*NAV*/
 .wrapper_header nav{
   float: right;
@@ -559,7 +626,6 @@ header{
   /*margin-top: 6px;*/
   margin-top: 9px;
 }
-.menu{}
 .menu__item{
   display: inline-block;
 }
@@ -631,12 +697,13 @@ header{
 .slider__box{
   display: block;
   position: absolute;
-  top: 260px;
+  /* top: 260px; */
   /*left: 1335px;*/
-  left: 641px;
+  /* left: 641px; */
   height: 570px;
   width: 270px;
   overflow: hidden;
+  margin: -337px 0px 0px 616px;
 }
 .slider_iphone{
   display: block;
@@ -647,14 +714,12 @@ header{
 }
 
 .slider_arrows{
-  /*width: 1597px;*/
-  width: 100%;
+  width: 1597px;
+  /* width: 100%; */
   height: 44px;
   overflow: hidden;
   position: absolute;
-  top: 456px;
-  left: 405px;
-
+  margin: -139px 0px 0px -314px;
 }
 .slider_arrows a{
   display: block;
@@ -710,6 +775,9 @@ header{
 .wrapper_about{
   background: linear-gradient(to top, #322539, #745083);
 
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .about{
   width: 960px;
@@ -718,9 +786,6 @@ header{
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
   padding-left: 11px;
   margin: 0px auto;
-  box-sizing: border-box;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 .about_elem {
   width: 274px;
@@ -787,7 +852,7 @@ header{
 
 /*SECTION SECOND*/
 .wrapper_second{
-  background: #fff;
+  background: #f9f9f9;
   overflow: hidden;
 }
 .second{
@@ -820,8 +885,9 @@ header{
   display: inline-block;
   height: 50px;
   width: 49px;
-  top: 1306px;
-  left: 695px;
+  margin: -6px 0px 0px -60px;
+  /* top: 1306px; */
+  /* left: 695px; */
 }
 .testimonials span{
   color: #edbfff;
@@ -934,7 +1000,7 @@ header{
 
 /*LOGOS*/
 .wrapper_logos{
-  background: #fff;
+  background: #f9f9f9;
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
 }
@@ -1040,6 +1106,7 @@ header{
   color: #c5c5c5;
   font-size: 16px;
   font-style: italic;
+  margin-left: 48px;
 }
 .footer1_elem .foot_par_960{
   font-family: 'Open Sans Light', Tahoma, sans-serif;
@@ -1104,5 +1171,80 @@ header{
 }
 .footer2_design span{
   font-family: 'open_sansextrabold', Tahoma, sans-serif;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/lg/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/lg/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/lg/leaguegothic-regular-webfont.woff2') format('woff2'),
+     url('../fonts/lg/leaguegothic-regular-webfont.woff') format('woff'),
+     url('../fonts/lg/leaguegothic-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'League Ghotic Condensed';
+    src: url('../fonts/lg/leaguegothic-condensedregular-webfont.eot');
+    src: url('../fonts/lg/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lg/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('../fonts/lg/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../fonts/lg/leaguegothic-condensedregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/os/opensans-bold-webfont.eot');
+    src: url('../fonts/os/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/os/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/os/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/os/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/os/opensans-extrabold-webfont.eot');
+    src: url('../fonts/os/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/os/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/os/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/os/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/os/opensans-light-webfont.eot');
+    src: url('../fonts/os/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/os/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/os/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/os/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/os/opensans-regular-webfont.eot');
+    src: url('../fonts/os/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/os/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/os/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/os/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/os/opensans-semibold-webfont.eot');
+    src: url('../fonts/os/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/os/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/os/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/os/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
 }
