@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
   *{
     transition: all .4s;
   }
@@ -57,9 +57,6 @@
     font-size: 16px;
     width: 282px;
   }
-  .wrapper .about{
-    width: 768px;
-  }
   .wrapper .logos{
     width: 768px;
   }
@@ -81,11 +78,14 @@
     width: 768px;
   }
   .wrapper .second_buttons{
-    margin: 54px 0px 0px 154px
+    margin: 54px 0px 0px -1px;
+  }
+  .wrapper .about{
+    width: 768px;
   }
   .wrapper .about_elem{
     width: 200px;
-    margin: 68px 18px 0px 28px;
+    margin: 68px 54px 0px -3px;
   }
   .wrapper .about_elem h3{
     font-size: 24px;
@@ -99,23 +99,30 @@
   }
   .wrapper .testimonials{
     width: 313px;
+    margin: 0px 0px 0px 42px;
   }
   .wrapper .testimonials h3{
     font-size: 24px;
-    margin: 28px 0px 0px 81px;
+    margin: 26px 0px 0px 38px;
+  }
+  .testimonials h3:before{
+    margin: -8px 0px 0px -63px;
   }
   .wrapper .testimonials p{
     height: 144px;
     width: 238px;
     overflow: hidden;
-    margin: -2px 0px 0px 81px;
+    margin: 0px 0px 0px 37px;
   }
   .wrapper .testimonials span{
     display: block;
   }
   .wrapper .blog{
     width: 340px;
-    margin-left: 100px;
+    margin-left: 56px;
+  }
+  .wrapper .blog h3{
+    margin: -4px 0px 0px 1px;
   }
   .wrapper .blog__elem{
     margin: 7px 0 0 0;
@@ -130,7 +137,7 @@
     overflow: hidden;
   }
   .wrapper .blog a{
-    margin: 10px 0px 0px 240px;
+    margin: 17px 0px 0px 240px;
   }
   .wrapper .footer1{
     width: 768px;
@@ -160,10 +167,10 @@
     height: 200px;
   }
   .wrapper .wrapper_footer2 nav{
-    margin: 40px 0px 0px 14px;
+    margin: 36px 0px 0px 14px;
   }
   .wrapper .footer2_design{
-    margin: 26px 22px 0px 28px;
+    margin: 26px 25px 0px 30px;
     display: block;
   }
   .wrapper .wrapper_footer2 .menu__elem{
@@ -195,7 +202,7 @@
     margin: 0 0 153px 0;
   }
 }
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
   body .wrapper{
     min-width: 480px;
     max-width: 768px;
@@ -302,21 +309,21 @@
   }
   .wrapper .about_elem:before{
     top: 8px;
-    left: 25px;
+    left: -1px;
   }
   .wrapper .about_elem:last-child{
     margin: 0px auto 28px;
   }
   .wrapper .about_elem h3{
-    margin: 8px 0px 0px 45px;
+    margin: 5px 0px 0px 19px;
   }
   .wrapper .about_elem p{
-    margin: 0px 0px 0px 78px;
+    margin: 1px 0px 0px 52px;
     width: 360px;
     height: 73px;
   }
   .wrapper .about_elem a{
-    margin: 0px 0 0px 392px;
+    margin: 0px 0 0px 365px;
   }
   .wrapper .wrapper_second{
     height: 786px;
@@ -430,7 +437,7 @@
   }
 
 }
-@media (max-width: 320px){
+@media screen and (max-width: 320px){
   body .wrapper{
     min-width: 320px;
     max-width: 480px;
@@ -580,7 +587,8 @@
   font-size: 24px;
   margin: 0 auto;
   position: relative;
-  background: #aaa url(../img/bg.jpg) no-repeat 0px 0px;
+  background: #aaa url(../img/bg.jpg) no-repeat center 0px;
+  /*background-size: auto;*/
   overflow: hidden;
 }
 
@@ -664,19 +672,22 @@ header{
   overflow: hidden;
 }
 .slider__item1 h1{
-  font-size: 60px;
+  font-size: 58px;
   color: #fff;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
+  margin: 5px 0px 0px 4px;
+  font-weight: 500;
 }
 .slider__item1 h2{
   font-size: 34px;
   color: #edbfff;
   /*line-height: 20px;*/
-  margin: -10px 0 10px 0;
-  letter-spacing: -2px;
+  margin: -10px 0 10px 3px;
+  letter-spacing: -.7px;
   height: 34px;
   overflow: hidden;
+  font-weight: 500;
 }
 .slider__item1 p{
   font-size: 18px;
@@ -691,7 +702,7 @@ header{
   height: 570px;
   width: 270px;
   overflow: hidden;
-  margin: -337px 0px 0px 616px;
+  margin: -334px 0px 0px 618px;
 }
 .slider_iphone{
   display: block;
@@ -774,14 +785,14 @@ header{
   height: 342px;
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  padding-left: 11px;
+  padding-left: 33px;
   margin: 0px auto;
 }
 .about_elem {
   width: 274px;
   height: 204px;
   display: inline-block;
-  margin: 73px 55px 64px 3px;
+  margin: 73px 61px 64px 0px;
 }
 .about_elem:last-child{
   margin-right: 0px;
@@ -794,12 +805,11 @@ header{
   width: 28px;
   position: relative;
   top: 8px;
-  left: -3px;
+  left: -4px;
 }
 .about_elem h3{
   font-family: 'League Gothic', Tahoma, sans-serif;
   font-size: 30px;
-  letter-spacing: -1px;
   display: inline-block;
   margin: 0px 0px 0px 18px;
 }
@@ -818,20 +828,20 @@ header{
   color: #fff;
   text-align: right;
   display: inline-block;
-  margin: 16px 0px 0px 210px;
+  margin: 18px 0px 0px 209px;
 }
 .about_elem a:hover{
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
 
 .tool-icon:before{
-  background-position: 0px 0px;
+  background-position: 0px 1px;
 }
 .speak-icon:before{
   background-position: -36px 0px;
 }
 .music-icon:before{
-  background-position: -75px 0px;
+  background-position: -77px 1px;
 }
 
 
@@ -855,14 +865,15 @@ header{
   display: inline-block;
   width: 427px;
   height: 295px;
+  margin: 0px 0px 0px 26px;
   background: url(../img/testimonials_bg.png) 0px 0px no-repeat;
 }
 .testimonials h3{
   font-family: 'League Gothic', Tahoma, sans-serif;
   font-size: 30px;
-  letter-spacing: -1px;
   display: inline-block;
-  margin: 30px 42px 0px 38px;
+  margin: 27px 42px 0px 38px;
+  font-weight: 500;
 }
 .testimonials h3:before{
   content: '';
@@ -871,7 +882,7 @@ header{
   display: inline-block;
   height: 50px;
   width: 49px;
-  margin: -6px 0px 0px -60px;
+  margin: -6px 0px 0px -61px;
 }
 .testimonials span{
   color: #edbfff;
@@ -879,7 +890,7 @@ header{
 .testimonials p{
   font-family: 'Open Sans Light', Tahoma, sans-serif;
   font-size: 16px;
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px;*/
   display: inline-block;
   margin: 0px 42px 0px 38px;
   line-height: 24px;
@@ -888,7 +899,7 @@ header{
 /*----TESTIMONIALS BUTTONS----*/
 /*slider buttons*/
 .second_buttons{
-  margin: 56px 0 0 0;
+  margin: 58px 0 0 0;
   text-align: center;
 }
 .second_buttons input{
@@ -924,25 +935,24 @@ header{
   height: 295px;
   box-sizing: -moz-border-box;
   box-sizing: border-box;
-  margin: 30px 0px 0px 60px;
+  margin: 30px 0px 0px 50px;
 }
 .blog h3{
   font-family: 'League Gothic', Tahoma, sans-serif;
   font-size: 30px;
-  letter-spacing: -1px;
   display: inline-block;
-  margin: 0px 0px 0px 0px;
+  margin: -3px 0px 0px 9px;
 }
 .blog__elem{
   display: inline-block;
+  margin: 7px 0px 0px 8px;
 }
 .blog a{
   display: inline-block;
-  margin: 15px 0px 0px 320px;
+  margin: 18px 0px 0px 356px;
   font-size: 18px;
   color: #000;
   font-family: 'League Gothic', Tahoma, sans-serif;
-  letter-spacing: -0.5px;
 }
 .blog a:after{
   content: "READ MORE HERE";
@@ -1001,14 +1011,14 @@ header{
   height: 64px;
   display: inline-block;
   background: url(../img/logos_sprite.png) no-repeat;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 /*logos bg position*/
 .logos .logos_item1{
   background-position: 0px 0px;
   width: 69px;
-  margin-left: 93px;
+  margin-left: 95px;
 }
 .logos .logos_item2{
   background-position: -134px 0px;
@@ -1018,22 +1028,22 @@ header{
 .logos .logos_item3{
   background-position: -270px 0px;
   width: 65px;
-  margin-left: 63px;
+  margin-left: 59px;
 }
 .logos .logos_item4{
   background-position: -408px 0px;
   width: 52px;
-  margin-left: 74px;
+  margin-left: 70px;
 }
 .logos .logos_item5{
   background-position: -528px 0px;
   width: 103px;
-  margin-left: 67px;
+  margin-left: 65px;
 }
 .logos .logos_item6{
   background-position: -697px 0px;
   width: 78px;
-  margin-left: 65px;
+  margin-left: 62px;
 }
 
 /*hover*/
@@ -1074,17 +1084,18 @@ header{
   width: 320px;
   height: 204px;
   display: inline-block;
-  margin: 96px -4px 96px 0px;
+  margin: 90px -4px 96px 0px;
 }
 .footer1_elem:last-child{
   margin-right: 0px;
 }
 .footer1_elem h3{
   font-family: 'League Gothic', Tahoma, sans-serif;
+  font-weight: 500;
   font-size: 30px;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   display: inline-block;
-  margin: 0px 0px 0px 50px;
+  margin: 0px 0px 0px 40px;
 }
 .footer1_item_copyright {
   font-family: Georgia, sans-serif;
@@ -1098,7 +1109,7 @@ header{
   font-size: 16px;
   letter-spacing: -0.5px;
   display: inline-block;
-  margin: 5px 0px 0px 50px;
+  margin: 5px 0px 0px 40px;
   line-height: 24px;
 }
 .footer1 .footer1_item_head{
@@ -1120,13 +1131,13 @@ header{
 .footer2{
   margin: 0 auto;
   width: 960px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .wrapper_footer2 nav{
   float: left;
   display: inline-block;
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 37px;
+  margin-left: -2px;
 }
 .wrapper_footer2 .menu__item{
   display: inline-block;
@@ -1138,12 +1149,13 @@ header{
   font-size: 20px;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
   padding: 5px 5px 2px 5px;
-  margin-right: 37px;
+  margin-right: 29px;
 }
 .footer2_design{
   display: inline-block;
   float: right;
-  margin-top: 50px;
+  margin-top: 49px;
+  margin-right: -4px;
 }
 .footer2_design p{
   font-family: 'Open Sans Light', Tahoma, sans-serif;
