@@ -574,21 +574,14 @@
 
 
 .wrapper{
-  /*width: 964px;*/
-  /*width: 2400px;*/
-
-  /*width: 100%;*/
-  /*min-width: 768px;*/
   min-width: 960px;
-  /*min-width: 1600px;*/
   max-width: 2400px;
-
   font-family: 'League Gothic', Tahoma, sans-serif;
   color: #000;
   font-size: 24px;
   margin: 0 auto;
   position: relative;
-  background: #aaa url(../img/bg.jpg) no-repeat 0px 0px;
+  background: #aaa url(../img/bg.jpg) no-repeat center 0px;
   overflow: hidden;
 }
 
