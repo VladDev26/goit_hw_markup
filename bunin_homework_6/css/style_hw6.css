@@ -19,28 +19,28 @@ header{
 }
 .telephone_box{
   display: inline-block;
-  position: relative;
-  top: 19px;
-  left: 14px;
+  margin: 4px 0px 0px 12px;
 }
-.telephone_box p:before{
+.telephone_box:before{
   content: "";
   border-radius: 10px;
   background:
-  url(../img/header_sprite.png) no-repeat 3px -1px,
-  linear-gradient(to top, #206988, #0c3256);
+             url(../img/header_sprite.png) no-repeat 2px -1px,
+             linear-gradient(to top, #206988, #0c3256);
   height: 20px;
   width: 20px;
-  position: relative;
-  top: 4px;
-  left: -5px;
+  margin: 0px 0px 0px 0px;
   display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -4px;
 }
 .telephone_box p{
   color: #5e696d;
   font-size: 20px;
-  text-rendering: geometricPrecision;
   letter-spacing: 0.5px;
+  display: inline-block;
+  margin: 0px 4px 0px -5px;
 }
 .authorization_box{
   height: 25px;
@@ -49,9 +49,10 @@ header{
   background: linear-gradient(to bottom, #206988, #0c3256);
   box-shadow: 2px 3px 0px 0px rgba(150, 150, 150, 0.75);
   border-radius: 5px;
-  position: relative;
+  /*position: relative;
   top: 18px;
-  left: 29px;
+  left: 29px;*/
+  margin: 17px 0px 0px 6px;
 }
 .authorization_box form{
   display: inline-block;
@@ -84,6 +85,10 @@ header{
   font-family: "Lucida Sans Unicode", Arial, sans-serif;
   color: #fff;
   font-size: 11px;
+  margin: 0px 0px 0px -2px;
+}
+[type="button"]{
+  margin: 0px 0px 0px -5px;
 }
 [type="button"],
 [type="submit"]{
@@ -98,7 +103,9 @@ header{
 .forgot_pass{
   color: #bfbfbf;
   font-family: "Lucida Sans Unicode", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
+  margin: 0px 0px 0px 12px;
+  letter-spacing: 0.5px;
 }
 .navi_box {
   display: inline-block;
@@ -106,22 +113,29 @@ header{
   width: 75px;
   border: 1px solid #bdc4c7;
   border-radius: 12px;
-  background: #fff url(../img/header_sprite.png) no-repeat -815px 4px;
+  background: #fff url(../img/header_sprite.png) no-repeat -816px 4px;
   box-shadow: 0px 1px 2px 0px rgba(150, 150, 150, 0.52);
-  position: relative;
-  top: 12px;
-  left: 42px;
+  overflow: hidden;
+  margin: 0px 0px -2px 13px;
 }
-.navi_box li{
+/*.navi_box li{
   display: inline-block;
+  margin: 0px 0px 0px 8px;
 }
+.navi_box li+li{
+  margin: 0px 0px 0px 3px;
+}
+.navi_box li+li+li{
+  margin: 0px 0px 0px 4px;
+}*/
 .navi_box a{
   display: inline-block;
   text-align: center;
   height: 14px;
   width: 14px;
-  position: relative;
+  /*position: relative;*/
 }
+
 
 /*NAVI ANCHORS POSITIONING*/
 .navi_anchor1{
