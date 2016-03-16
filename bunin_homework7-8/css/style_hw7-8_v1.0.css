@@ -15,7 +15,7 @@
     width: 768px;
   }
   .wrapper .logo{
-    margin: 0px 0px 0px 18px;
+    margin: 0px 0px 0px 20px;
   }
   .wrapper .wrapper_header nav{
     margin: 16px 0px 0px 14px;
@@ -41,13 +41,14 @@
   .wrapper .slider__item1 h1{
     margin: 0 0 10px 0;
     font-size: 49px;
+    letter-spacing: -0.5px;
   }
   .wrapper .slider__item1 h2{
     font-size: 24px;
     margin: -10px 0 3px 0;
     display: inline-block;
-    width: 266px;
-    letter-spacing: -1px;
+    width: 270px;
+    letter-spacing: 0px;
   }
   .wrapper .slider__item1 p{
     font-size: 16px;
@@ -88,10 +89,14 @@
   }
   .wrapper .about{
     width: 768px;
+    padding-left: 71px;
   }
   .wrapper .about_elem{
     width: 200px;
-    margin: 68px 54px 0px -3px;
+    margin: 68px 54px 0px -4px;
+  }
+  .wrapper .about_elem:last-child{
+    margin-left: 2px;
   }
   .wrapper .about_elem h3{
     font-size: 24px;
@@ -109,10 +114,10 @@
   }
   .wrapper .testimonials h3{
     font-size: 24px;
-    margin: 26px 0px 0px 38px;
+    margin: 26px 0px 0px 39px;
   }
   .testimonials h3:before{
-    margin: -8px 0px 0px -63px;
+    margin: -7px 0px 0px -62px;
   }
   .wrapper .testimonials p{
     height: 144px;
@@ -122,6 +127,7 @@
   }
   .wrapper .testimonials span{
     display: block;
+    margin: -4px 0px 0px 1px;
   }
   .wrapper .blog{
     width: 340px;
@@ -131,7 +137,7 @@
     margin: -4px 0px 0px 1px;
   }
   .wrapper .blog__elem{
-    margin: 7px 0 0 0;
+    margin: 9px 0 0 2px;
   }
   .wrapper .blog a:after{
     content: "MORE BLOG POSTS";
@@ -143,7 +149,7 @@
     overflow: hidden;
   }
   .wrapper .blog a{
-    margin: 17px 0px 0px 240px;
+    margin: 12px 0px 0px 242px;
   }
   .wrapper .footer1{
     width: 768px;
@@ -159,12 +165,15 @@
   }
   .wrapper .footer1_elem .foot_par_960{
     hyphens: manual;
-    margin: 5px 0px 0px 22px;
+    margin: 8px 0px 0px 20px;
+  }
+  .wrapper .footer1_elem:last-child{
+    margin: 0px 0px 96px 1px;
   }
   .wrapper .footer1_elem .foot_par_960:before{
     content: 'NEWS CATEGORIES';
     font-family: 'League Gothic', Tahoma, sans-serif;
-    letter-spacing: -.5px;
+    letter-spacing: 0px;
     margin-bottom: 10px;
     font-size: 24px;
     display: block;
@@ -208,6 +217,9 @@
     margin: 0 0 153px 0;
   }
 }
+
+
+
 @media screen and (max-width: 768px){
   body .wrapper{
     min-width: 480px;
@@ -367,7 +379,7 @@
     margin: 39px 0px 0px 82px;
   }
   .wrapper .blog a{
-    margin: 14px 0px 0px 251px;
+    margin: 14px 0px 0px 249px;
   }
   .wrapper .wrapper_logos{
     height: 233px;
@@ -431,6 +443,12 @@
     margin: 0px 11px 0px 0px;
   }
 
+  .wrapper .wrapper_footer2 .menu__elem:hover{
+    background: none;
+    border: transparent;
+    text-shadow: none;
+  }
+
   .wrapper .logos .logos_item1{
     margin-left: 83px;
     margin-top: 39px;
@@ -442,8 +460,10 @@
   .wrapper .footer2 .menu__item{
     border: none;
   }
-
 }
+
+
+
 @media screen and (max-width: 480px){
   body .wrapper{
     min-width: 320px;
@@ -456,10 +476,10 @@
   .wrapper .wrapper_header nav{
     visibility: hidden;
     /*display: none;*/
-    width: auto;
+    /*display: none;*/
+    /*width: auto;*/
     margin: 72px 0px 0px -200px;
   }
-
   /*.wrapper .menu320p_item{
     display: inline-block;
     text-decoration: none;
@@ -479,19 +499,19 @@
   }
   .wrapper .menu_elem_first{
     visibility: visible;
-    border-bottom: .5px solid #edbfff;
-    width: 49px;
-    margin: 2px 0px 0px 100px;
+    /*border-bottom: .5px solid #edbfff;*/
+    /*width: 49px;*/
+    margin: 0px;
   }
-  .wrapper .menu_elem_first:hover{
-    background: none;
+  #nav:hover{
+    /*background: none;*/
+    visibility: visible;
   }
   .wrapper .menu__elem{
     /*visibility: hidden;*/
     display: block;
-    /*width: 244px;*/
-    /*height: 30px;*/
-    padding: 6px 0 5px;
+    width: 244px;
+    padding: 6px 0 3px;
     box-sizing: border-box;
   }
   .wrapper .logo{
@@ -531,6 +551,7 @@
   /*section about*/
   .wrapper .about{
     width: 320px;
+    padding-left: 26px;
   }
   .wrapper .about_elem{
     width: 320px;
@@ -550,6 +571,7 @@
   }
   .wrapper .about_elem h3{
     margin: 0px 0px 0px 21px;
+    letter-spacing: -0.2px;
   }
   .wrapper .about_elem p{
     width: 194px;
@@ -585,7 +607,7 @@
     margin: 39px 0px 0px 18px;
   }
   .wrapper .blog{
-    margin: 46px 0px 0px 19px;
+    margin: 44px 0px 0px 17px;
     width: 321px;
     overflow: hidden;
   }
@@ -632,9 +654,12 @@
     display: none;
   }
   .wrapper .footer2_design{
-    margin: 38px 189px 0px 28px;
+    margin: 39px 171px 0px 28px;
   }
 }
+
+
+
 
 
 .wrapper{
